@@ -21,7 +21,7 @@
 
 <body>
   <!-- Header -->
-  <header class="header-background">
+  <header class="page-header">
     <div class="header-wrapper container">
       <nav class="header-nav">
         <a href="./index.html" title="To main page" class="logo"><span class="logo-accent">Web</span>Studio</a>
@@ -38,6 +38,12 @@
         </ul>
       </nav>
 
+      <button type="button" class="open-mobile-menu-btn" data-menu-open>
+        <svg class="open-mobile-menu-btn__icon">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+
       <ul class="contact-list">
         <li class="mail">
           <a href="mailto:info@devstudio.com" class="contact-link mail-link">
@@ -53,22 +59,47 @@
           </a>
         </li>
       </ul>
+
+      <!-- Mobile menu -->
+    </div>
+    <div class="mobile-menu is-open" data-menu>
+      <div class="mobile-menu__container">
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="list">
+          <li>
+            <a class="link" href="">link-1</a>
+          </li>
+          <li>
+            <a class="link" href="">link-2</a>
+          </li>
+          <li>
+            <a class="link" href="">link-3</a>
+          </li>
+          <li>
+            <a class="link" href="">link-4</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
   <main>
     <!-- Hero section -->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="hero__container">
         <h1 class="hero__title">Effective Solutions For Your Business</h1>
         <button type="button" title="Request our service here" class="hero__button" data-modal-open>
           Request our service
         </button>
       </div>
-    </section>
+    </section> -->
 
     <!-- Benefit section -->
-    <section class="benefits section">
+    <!-- <section class="benefits section">
       <div class="container">
         <h2 class="benefits-main-title visually-hidden">Our benefits</h2>
         <ul class="benefits-wrapper">
@@ -119,10 +150,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- What we do / Our job section -->
-    <section class="section job">
+    <!-- <section class="section job">
       <div class="container">
         <h2 class="our-job__title">What we do</h2>
         <ul class="our-job__wrapper">
@@ -149,10 +180,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- Our team section -->
-    <section class="team section">
+    <!-- <section class="team section">
       <div class="container">
         <h2 class="team-main-title">Our Team</h2>
         <ul class="team-wrapper">
@@ -315,11 +346,11 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <!-- Regular customers -->
-  <section class="regulars section">
+  <!-- <section class="regulars section">
     <div class="container">
       <h2 class="regulars-title">Regular Customers</h2>
       <div class="regulars-wrapper">
@@ -369,10 +400,10 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
-  <footer class="footer footer-background section">
+  <!-- <footer class="footer footer-background section">
     <div class="container footer-wrapper">
       <div class="footer-column-left">
         <a href="./index.html" title="To the main page" class="logo footer-logo"><span
@@ -425,10 +456,10 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
 
-      <!-- Subscription form -->
-      <form class="subscription-form">
+  <!-- Subscription form -->
+  <!-- <form class="subscription-form">
         <label>
           <span class="subscription-title">Subscribe to the newsletter</span>
           <input class="subscription-email" type="email" name="subscription_email" placeholder="E-mail" required />
@@ -439,23 +470,23 @@
             <use href="./images/icons.svg#icon-paperplane-send"></use>
           </svg>
         </button>
-      </form>
+      </form> -->
 
-    </div>
-  </footer>
+  <!-- </div>
+  </footer> -->
 
   <!-- Modal window -->
-  <div class="backdrop is-hidden" data-modal>
+  <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close-button" data-modal-close>
         <svg class="modal-close-icon" height="18">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
-      </button>
+      </button> -->
 
-      <!-- form -->
+  <!-- form -->
 
-      <form class="information-form">
+  <!-- <form class="information-form">
 
         <h2 class="info-form-title">Leave your information and we'll call you back</h2>
         <label class="name">
@@ -499,8 +530,9 @@
       </form>
 
     </div>
-  </div>
-  <script src="./js/modal.js"></script>
+  </div> -->
+  <script src="./js/menu.js"></script>
+  <!-- <script src="./js/modal.js"></script> -->
 
 </body>
 
