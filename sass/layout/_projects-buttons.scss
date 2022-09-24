@@ -1,0 +1,36 @@
+.browse-projects {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  gap: 8px;
+}
+
+.browse-projects-item {
+  margin: 2px;
+}
+
+.projects-button {
+  font-family: inherit;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
+
+  transition: outline var(--transition-dur-and-func);
+
+  &.active {
+    background-color: var(--accent-text-color);
+    color: var(--accentwhite-text-color);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    color: var(--accentwhite-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:focus {
+    outline: 2px solid var(--background-footer);
+  }
+}

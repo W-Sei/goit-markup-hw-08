@@ -1,0 +1,49 @@
+.projects {
+  padding-bottom: 0px;
+}
+
+.projects-button {
+  background-color: var(--button-background);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+}
+
+.all-button {
+  padding: 6px 27px 6px 26px;
+}
+
+.web-sites-button {
+  padding: 6px 26px;
+}
+
+.apps-button {
+  padding: 6px 53px;
+}
+
+.design-button {
+  padding: 6px 26px 6px 25px;
+}
+
+.marketing-button {
+  padding: 6px 26px 6px 27px;
+}
+
+.projects-title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  margin-top: 4px;
+}

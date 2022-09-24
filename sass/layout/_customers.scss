@@ -1,0 +1,77 @@
+.regulars-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+}
+
+.regulars-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.regulars-link {
+  fill: var(--team-social-link);
+  border: 1px solid var(--team-social-link);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
+  transition: border-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+    cursor: pointer;
+  }
+
+  &:focus {
+    transition: outline var(--transition-dur-and-func);
+    outline: 2px solid var(--accent-text-color);
+  }
+}
+
+.company-icon {
+  transition: fill var(--transition-dur-and-func);
+}
+
+.company-one {
+  width: 41px;
+  height: 46.7px;
+}
+
+.company-two {
+  width: 40px;
+  height: 52px;
+}
+
+.company-three {
+  width: 43.46px;
+  height: 41.18px;
+}
+
+.company-four {
+  width: 84.44px;
+  height: 40.62px;
+}
+
+.company-five {
+  width: 62.54px;
+  height: 45.43px;
+}
+
+.company-six {
+  width: 93.79px;
+  height: 43.93px;
+}

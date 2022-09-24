@@ -1,0 +1,76 @@
+.card {
+  border-radius: 4px;
+  margin-right: 0px;
+  overflow: hidden;
+  border: transparent;
+}
+.item {
+  transition: box-shadow var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: box-shadow var(--transition-dur-and-func);
+  }
+}
+
+.item-link {
+  transition: box-shadow var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: box-shadow var(--transition-dur-and-func);
+  }
+
+  &:hover {
+    transform: translateY(0%);
+  }
+
+  &:focus {
+    border: 1px solid black;
+  }
+}
+
+.card-content {
+  padding: 24px 20px;
+  border: var(--card-border);
+}
+
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+
+  .item-link:focus > & {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+}
+
+.card-thumb-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--projects-overlay);
+
+  padding: 0px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--accentwhite-text-color);
+
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform var(--transition-dur-and-func);
+
+  .item-link:hover &,
+  .item-link:focus & {
+    transform: translateY(0%);
+  }
+}

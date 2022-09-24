@@ -1,0 +1,98 @@
+.footer {
+  padding-top: 58.5px;
+  padding-bottom: 58.5px;
+}
+
+.footer-background {
+  background-color: var(--background-footer);
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-column-right {
+  margin-left: 70px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 0;
+}
+
+.footer-contacts {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  & li {
+    line-height: 1.7;
+    margin-top: 9px;
+  }
+}
+
+.logo-footer-accent {
+  color: var(--accentwhite-text-color);
+}
+
+.address-link {
+  color: var(--accentwhite-text-color);
+}
+
+.footer-contact-link {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  transition: color var(--transition-dur-and-func);
+}
+
+.footer-links-title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--accentwhite-text-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.footer-social-list-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-social-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+
+  &:hover .social-icon,
+  &:focus .social-icon {
+    fill: var(--background-main);
+  }
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--background-main);
+}
+
+.current {
+  color: var(--accent-text-color);
+}
