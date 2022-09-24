@@ -276,7 +276,7 @@ address {
   }
   .mobile-menu__container {
     position: relative;
-    width: 425px;
+    width: 480px;
     padding-left: 40px;
     padding-right: 15px;
     margin-left: auto;
@@ -287,14 +287,92 @@ address {
     top: 10px;
     right: 15px;
     background-color: transparent;
-    fill: orange;
     border: 0;
     padding: 0;
     line-height: 0;
   }
+  .mobile-menu__close-btn:focus, .mobile-menu__close-btn:hover {
+    fill: var(--accent-text-color);
+    transition: fill var(--transition-dur-and-func);
+  }
   .mobile-menu__close-icon {
     width: 40px;
     height: 40px;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .mobile-nav-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  }
+  .navigation-link:focus, .navigation-link:hover {
+    color: var(--accent-text-color);
+    transition: color var(--transition-dur-and-func);
+  }
+  .mobile-nav-list {
+    margin-bottom: -32px;
+  }
+  .mobile-contact-list {
+    margin-top: 306px;
+    margin-bottom: 0;
+  }
+  .contact-link:focus, .contact-link:hover {
+    color: var(--accent-text-color);
+    transition: color var(--transition-dur-and-func);
+  }
+  .mail-link-icon,
+.cell-link-icon {
+    display: none;
+  }
+  .mobile-mail {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+    margin-bottom: 32px;
+  }
+  .mobile-cell {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
+  .mobile-social {
+    margin-top: 64px;
+    display: flex;
+  }
+  .mobile-social__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid var(--accent-text-color);
+  }
+  .mobile-social__item:first-child {
+    padding-left: 0;
+  }
+  .mobile-social__item:last-child {
+    border-right: none;
+    padding-right: 0px;
+  }
+  .mobile-social__link:focus, .mobile-social__link:hover {
+    color: var(--accent-text-color);
+    transition: color var(--transition-dur-and-func);
   }
 }
 @media screen and (min-width: 768px) {
