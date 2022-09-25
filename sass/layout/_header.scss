@@ -7,24 +7,24 @@
   .contact-list {
     display: none;
   }
+}
 
-  .open-mobile-menu-btn {
-    line-height: 0;
-    border: none;
-    background-color: transparent;
-    padding: 0;
+.open-mobile-menu-btn {
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
 
-    &:focus,
-    &:hover {
-      fill: var(--accent-text-color);
-      transition: fill var(--transition-dur-and-func);
-    }
+  &:focus,
+  &:hover {
+    fill: var(--accent-text-color);
+    transition: fill var(--transition-dur-and-func);
   }
+}
 
-  .open-mobile-menu-btn__icon {
-    width: 40px;
-    height: 40px;
-  }
+.open-mobile-menu-btn__icon {
+  width: 40px;
+  height: 40px;
 }
 
 .contact-phone-number {
