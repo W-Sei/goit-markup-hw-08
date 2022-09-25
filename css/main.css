@@ -400,6 +400,7 @@ address {
     background-position: center;
     background-repeat: no-repeat;
     max-width: 480px;
+    min-width: 480px;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (max-width: 767px) and (min-resolution: 192dpi) and (max-width: 767px), screen and (max-width: 767px) and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -838,6 +839,7 @@ address {
   .job {
     display: flex;
     padding-top: 0px;
+    padding-bottom: 94px;
   }
   .our-job__title {
     color: var(--title-text-color);
@@ -879,6 +881,9 @@ address {
     margin-bottom: 0px;
     padding-bottom: 60px;
   }
+  .team > .container {
+    width: 480px;
+  }
 }
 .team-main-title {
   color: var(--title-text-color);
@@ -892,6 +897,9 @@ address {
 
 .team {
   background-color: var(--button-background);
+  max-width: 480px;
+  min-width: 480px;
+  margin: 0 auto;
 }
 
 .team-member {
@@ -953,6 +961,9 @@ address {
 }
 
 @media screen and (min-width: 768px) {
+  .team {
+    max-width: 768px;
+  }
   .team-wrapper {
     display: flex;
     justify-content: space-between;
@@ -970,6 +981,9 @@ address {
   }
 }
 @media screen and (min-width: 1200px) {
+  .team {
+    max-width: 1600px;
+  }
   .team-wrapper {
     display: flex;
     justify-content: space-between;
