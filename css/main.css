@@ -741,8 +741,10 @@ address {
   .benefits-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 60px;
   }
   .benefits-item {
     display: flex;
@@ -787,11 +789,12 @@ address {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 738px;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 60px;
     margin-right: 15px;
     margin-left: 15px;
-    padding: 0;
   }
   .benefits-wrapper > .benefits-item {
     flex-basis: calc(50% - var(--card-set-gap));
@@ -816,7 +819,7 @@ address {
 @media screen and (min-width: 1200px) {
   .benefits-wrapper {
     flex-wrap: nowrap;
-    margin-top: 94px;
+    padding-top: 64px;
     gap: 30px;
     width: auto;
   }
@@ -834,7 +837,6 @@ address {
 @media screen and (min-width: 1200px) {
   .job {
     display: flex;
-    margin-top: 94px;
     padding-top: 0px;
   }
   .our-job__title {
@@ -869,6 +871,15 @@ address {
     color: var(--accentwhite-text-color);
   }
 }
+@media screen and (max-width: 767px) {
+  .team-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 60px;
+  }
+}
 .team-main-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -876,18 +887,11 @@ address {
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 60px;
 }
 
 .team {
   background-color: var(--button-background);
-}
-
-.team-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-inline-start: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .team-member {
@@ -942,8 +946,43 @@ address {
   background-color: var(--accentwhite-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+.team-item:last-child {
+  margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .team-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  .team-wrapper > .team-item {
+    margin-bottom: 30px;
+    width: 354px;
+  }
+  .team-main-title {
+    margin-bottom: 30px;
+    padding-top: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 64px;
+  }
+  .team-wrapper > .team-item {
+    margin-bottom: 30px;
+    width: 270px;
+  }
+}
 .regulars-title {
   font-style: normal;
   font-weight: 700;
