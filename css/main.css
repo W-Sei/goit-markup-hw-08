@@ -276,6 +276,12 @@ address {
     pointer-events: none;
     transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
   }
+  .mobile-menu.is-open {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
   .mobile-menu__container {
     position: relative;
     width: 480px;
