@@ -74,6 +74,24 @@ address {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -94,7 +112,7 @@ address {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 450px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -997,22 +1015,35 @@ address {
     width: 270px;
   }
 }
+@media screen and (max-width: 767px) {
+  .regulars.section {
+    padding-bottom: 30px;
+  }
+  .regulars-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+  }
+  .regulars-list .regulars-list-item {
+    margin-bottom: var(--card-set-gap);
+  }
+  .regulars-list .regulars-link {
+    width: 210px;
+  }
+}
 .regulars-title {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 30px;
   color: var(--title-text-color);
-}
-
-.regulars-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .regulars-link {
@@ -1070,6 +1101,47 @@ address {
   height: 43.93px;
 }
 
+@media screen and (min-width: 768px) {
+  .regulars.section {
+    padding-bottom: 30px;
+  }
+  .regulars-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+  }
+  .regulars-list .regulars-list-item {
+    margin-bottom: var(--card-set-gap);
+  }
+  .regulars-list .regulars-link {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regulars-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+  .regulars-list .regulars-list-item {
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
+  .regulars-list .regulars-link {
+    width: 170px;
+  }
+  .regulars-title {
+    padding-bottom: 30px;
+  }
+  .regulars.section {
+    padding-bottom: 94px;
+  }
+}
 .projects {
   padding-bottom: 0px;
 }
