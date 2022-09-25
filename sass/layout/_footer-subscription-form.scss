@@ -1,17 +1,27 @@
-.subscription-form {
-  display: flex;
-  align-items: flex-end;
-  margin-left: auto;
+// 0px - 767px
+@media screen and (max-width: 767px) {
+  .subscription-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    justify-content: center;
+    align-self: center;
+  }
+  .subscription-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--accentwhite-text-color);
+    margin-bottom: 20px;
+  }
 }
 
-.subscription-title {
-  display: block;
-
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--accentwhite-text-color);
-  margin-bottom: 20px;
+.subscription-form {
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
 }
 
 .subscription-email {
@@ -21,7 +31,8 @@
   width: 358px;
   height: 50px;
   background-color: var(--dark-background-color);
-  margin-right: 12px;
+  margin-right: 0px;
+  margin-bottom: 20px;
   color: var(--accentwhite-text-color);
   padding-left: 16px;
   transition: border-color var(--transition-dur-and-func);
@@ -70,4 +81,52 @@
 
 .subscription-button-icon {
   margin-left: 10px;
+}
+
+// 768px - 1200px
+@media screen and (min-width: 768px) {
+  .subscription-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .subscription-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--accentwhite-text-color);
+    margin-bottom: 20px;
+  }
+}
+
+// 1200px - etc.
+@media screen and (min-width: 1200px) {
+  .footer.section {
+    padding-bottom: 51px;
+  }
+
+  .subscription-form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 93px;
+    margin-right: 0;
+  }
+
+  .subscription-email {
+    margin-bottom: 0;
+  }
+
+  .subscription-title {
+    display: block;
+  }
+
+  .subscription-button {
+    margin-left: 12px;
+  }
 }
