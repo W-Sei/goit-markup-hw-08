@@ -1,9 +1,13 @@
-.card {
-  border-radius: 4px;
-  margin-right: 0px;
-  overflow: hidden;
-  border: transparent;
+// 0px - 767px
+@media screen and (max-width: 767px) {
+  .card {
+    border-radius: 4px;
+    margin-right: 0px;
+    overflow: hidden;
+    border: transparent;
+  }
 }
+
 .item {
   transition: box-shadow var(--transition-dur-and-func);
 
@@ -42,6 +46,7 @@
 .card-thumb {
   position: relative;
   overflow: hidden;
+  object-fit: fill;
 
   .item-link:focus > & {
     border-top: 1px solid black;
@@ -72,5 +77,25 @@
   .item-link:hover &,
   .item-link:focus & {
     transform: translateY(0%);
+  }
+}
+
+// 768px - 1200px
+@media screen and (min-width: 768px) {
+  .card {
+    border-radius: 4px;
+    margin-right: 0px;
+    overflow: hidden;
+    border: transparent;
+  }
+}
+
+// 1200px - etc.
+@media screen and (min-width: 1200px) {
+  .card {
+    border-radius: 4px;
+    margin-right: 0px;
+    overflow: hidden;
+    border: transparent;
   }
 }

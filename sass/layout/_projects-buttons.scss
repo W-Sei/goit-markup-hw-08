@@ -1,9 +1,13 @@
-.browse-projects {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 0px;
-  gap: 8px;
+// 0px - 767px
+@media screen and (max-width: 767px) {
+  .browse-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    gap: 8px;
+  }
 }
 
 .browse-projects-item {
@@ -32,5 +36,24 @@
 
   &:focus {
     outline: 2px solid var(--background-footer);
+  }
+}
+
+// 768px - 1200px
+@media screen and (min-width: 768px) {
+  .browse-projects {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    gap: 8px;
+  }
+}
+
+// 1200px - etc.
+@media screen and (min-width: 1200px) {
+  .browse-projects {
+    flex-wrap: nowrap;
   }
 }
