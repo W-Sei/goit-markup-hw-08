@@ -257,6 +257,7 @@ address {
   }
   .contact-link {
     color: var(--primary-text-color);
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -278,6 +279,9 @@ address {
     margin-left: auto;
     flex-direction: row;
     gap: var(--card-set-gap);
+  }
+  .contact-link {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -503,7 +507,7 @@ address {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 1600px;
+    max-width: 1600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
