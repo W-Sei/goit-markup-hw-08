@@ -417,7 +417,6 @@ address {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 480px;
     min-width: 480px;
   }
 }
@@ -485,7 +484,7 @@ address {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -504,7 +503,7 @@ address {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 1600px;
+    min-width: 1600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -917,7 +916,6 @@ address {
 
 .team {
   background-color: var(--button-background);
-  max-width: 480px;
   min-width: 480px;
   margin: 0 auto;
 }
@@ -982,7 +980,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .team {
-    max-width: 768px;
+    min-width: 768px;
   }
   .team-wrapper {
     display: flex;
@@ -1002,7 +1000,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .team {
-    max-width: 1600px;
+    min-width: 1600px;
   }
   .team-wrapper {
     display: flex;
@@ -1354,7 +1352,7 @@ address {
   line-height: 1.56;
   color: var(--accentwhite-text-color);
   overflow: auto;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--transition-dur-and-func);
 }
 .item-link:hover .card-thumb-overlay, .item-link:focus .card-thumb-overlay {
@@ -1395,6 +1393,7 @@ address {
   }
   .footer-column-left {
     align-self: center;
+    margin-bottom: 48px;
   }
   .footer-column-right {
     margin-left: 0px;
@@ -1436,7 +1435,6 @@ address {
 .footer-contacts {
   padding-left: 0px;
   margin-top: 0px;
-  margin-bottom: 48px;
 }
 .footer-contacts li {
   line-height: 1.7;
@@ -1512,7 +1510,16 @@ address {
     display: flex;
     flex-direction: row;
     gap: 165px;
-    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 52px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-contacts {
+    margin-bottom: 0;
+  }
+  .footer-column-right {
+    margin-bottom: 0;
   }
   .footer-contact-link {
     display: block;
@@ -1525,7 +1532,7 @@ address {
     padding-bottom: 58.5px;
   }
   .footer-background {
-    max-width: 1600px;
+    min-width: 1600px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1539,6 +1546,7 @@ address {
     align-items: baseline;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
     gap: 70px;
   }
   .footer-column-right {

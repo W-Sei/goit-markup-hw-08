@@ -12,7 +12,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 480px;
     min-width: 480px;
   }
 
@@ -93,7 +92,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 768px;
+    min-width: 768px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -120,7 +119,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 1600px;
+    min-width: 1600px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),

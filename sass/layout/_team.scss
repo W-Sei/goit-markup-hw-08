@@ -25,7 +25,7 @@
 
 .team {
   background-color: var(--button-background);
-  max-width: 480px;
+  // max-width: 480px;
   min-width: 480px;
   margin: 0 auto;
   // margin-left: auto;
@@ -101,7 +101,7 @@
 // 768px - 1200px
 @media screen and (min-width: 768px) {
   .team {
-    max-width: 768px;
+    min-width: 768px;
   }
 
   .team-wrapper {
@@ -126,7 +126,7 @@
 // 1200px - etc.
 @media screen and (min-width: 1200px) {
   .team {
-    max-width: 1600px;
+    min-width: 1600px;
   }
 
   .team-wrapper {
