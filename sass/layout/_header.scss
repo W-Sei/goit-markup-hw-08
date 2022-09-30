@@ -67,6 +67,10 @@
     padding-bottom: 19px;
   }
 
+  .header-wrapper.container {
+    overflow-x: visible;
+  }
+
   .header-nav {
     display: flex;
     align-items: center;
