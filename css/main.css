@@ -667,6 +667,15 @@ address {
     height: 609px;
   }
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 629px;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
@@ -816,6 +825,11 @@ address {
   transition: background var(--transition-dur-and-func);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+@media screen and (max-width: 479px) {
+  .info-form-button {
+    margin-top: 20px;
+  }
 }
 .info-form-button:hover, .info-form-button:focus {
   cursor: pointer;
