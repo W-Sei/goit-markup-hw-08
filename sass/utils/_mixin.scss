@@ -1,0 +1,12 @@
+@mixin flexbox($justify-content: flex-start) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify-content;
+}
+
+@mixin font($line-height: 16px, $font-weight: 400, $font-size: 14px, $letter-spacing: 0.03em) {
+  line-height: $line-height / $font-size;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+}

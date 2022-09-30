@@ -9,7 +9,9 @@
   }
 
   .team > .container {
-    width: 480px;
+    // width: 480px;
+    // margin-left: 0;
+    // margin-right: 0;
   }
 }
 
@@ -26,7 +28,7 @@
 .team {
   background-color: var(--button-background);
   // max-width: 480px;
-  min-width: 480px;
+  // min-width: 480px;
   margin: 0 auto;
   // margin-left: auto;
   // margin-right: auto;
@@ -126,7 +128,7 @@
 // 1200px - etc.
 @media screen and (min-width: 1200px) {
   .team {
-    min-width: 1600px;
+    min-width: 1200px;
   }
 
   .team-wrapper {
@@ -142,4 +144,9 @@
       width: 270px;
     }
   }
+
+  // .team > .container {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 }

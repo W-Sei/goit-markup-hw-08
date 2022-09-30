@@ -9,6 +9,20 @@
   }
 }
 
+.page-header {
+  background-color: var(--background-main);
+  border-bottom: var(--header-border);
+}
+
+.header-wrapper {
+  @include flexbox($justify-content: space-between);
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .open-mobile-menu-btn {
   line-height: 0;
   border: none;
@@ -29,20 +43,6 @@
 
 .contact-phone-number {
   display: none;
-}
-
-.page-header {
-  background-color: var(--background-main);
-  border-bottom: var(--header-border);
-}
-
-.header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .logo {

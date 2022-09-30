@@ -1,7 +1,8 @@
 // 0px - 767px
 @media screen and (max-width: 767px) {
   .footer-background {
-    min-width: 480px;
+    // min-width: 480px;
+    width: auto;
   }
 
   .footer-wrapper {
@@ -178,7 +179,7 @@
   }
 
   .footer-background {
-    min-width: 1600px;
+    min-width: 1200px;
     margin-right: auto;
     margin-left: auto;
   }

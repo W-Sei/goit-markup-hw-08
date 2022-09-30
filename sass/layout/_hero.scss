@@ -1,3 +1,9 @@
+// @media screen and (max-width: 320px) {
+//   .hero__title {
+//     width: 320px;
+//   }
+// }
+
 // 0px - 767px
 @media screen and (max-width: 767px) {
   .hero {
@@ -12,7 +18,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 480px;
+    // min-width: 480px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -38,7 +44,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
-  width: 360px;
+  // width: 360px;
   margin-right: auto;
   margin-left: auto;
 }
