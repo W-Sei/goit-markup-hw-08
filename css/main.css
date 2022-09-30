@@ -890,9 +890,10 @@ address {
 }
 .benefits-title {
   color: var(--title-text-color);
+  line-height: 1.1428571429;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  letter-spacing: 0.03em;
   margin-bottom: 9.41px;
 }
 
